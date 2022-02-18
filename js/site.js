@@ -12,7 +12,7 @@ function randomizeFlames(factor){
     }
 }
 window.addEventListener('load',()=>{
-    let factor = 1000;
+    let factor = 500;
     setInterval(function(){
         randomizeFlames(factor);
     },Math.random()*factor);
