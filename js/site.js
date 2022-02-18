@@ -13,7 +13,7 @@ function randomizeFlames(factor){
 }
 window.addEventListener('load',()=>{
     feather.replace();
-    let factor = 100;
+    let factor = 50;
     setInterval(function(){
         randomizeFlames(factor);
     },Math.random()*factor);
