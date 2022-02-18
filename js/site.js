@@ -17,3 +17,4 @@ window.addEventListener('load',()=>{
         randomizeFlames(factor);
     },Math.random()*factor);
 })
+// To view the CSS ONLY version, comment out lines 5-19 above.
