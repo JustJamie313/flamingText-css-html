@@ -4,29 +4,14 @@
         <title>Domesne</title>
         <link rel='stylesheet' type='text/css' href='css/site.css'/>
         <script src='js/site.js'></script>
-        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     </head>
-    <body>
+    <body >
         <header>
             <div class='row' id="flamingText"><h1 class='gradient'>&#8203;D<h1 class='gradient'>&#8203;o<h1 class='gradient'>&#8203;m<h1 class='gradient'>&#8203;e<h1 class='gradient'>&#8203;s<h1 class='gradient'>&#8203;n<h1 class='gradient'>&#8203;e</h1></h1></h1></h1></h1></h1></h1></div>
-            <span class='row'>
-                <h3>855-CODE-111</h3>
-                <h3 class="h3Dot">&middot;</h3>
-                <h3>855-263-3111</h3>
-            </span>
-            <details id='definition'>       
-                <summary class='row'> 
-                    <h3>domesne&nbsp;</h3>
-                    <h5>[doh-meyn]&nbsp;</h5>
-                    <div class='speak clickable' onclick='speakThis("domain");'><img data-feather="volume-2"></img></div>
-                </summary>
-                <em>noun</em>
-                <ol>
-                    <li>the collection of files and resources that embody your website presence.</li>
-                </ol>
-            </details>
         </header>
-        <main class="column">
+        <main id="addTo" class="column">
+            <label>HTML/CSS Only<input type='radio' name="version" value='css' checked></label><label>HTML/CSS with JavaScript<input type='radio' name="version" value='js'></label>
+            <div id="currentVersion">Current Version:</div>
             <h3>Flaming Text License</h3><br/>
             <p>This is free and unencumbered software released into the public domain.</p>
             <p>Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -52,9 +37,5 @@
             
                 <p>For more information, please refer to <a href='https://unlicense.org'>https://unlicense.org</a></p>
         </main>
-        <footer>
-            <p>&copy;<script>document.write(new Date().getFullYear());</script> ~ Domesne.com</p>
-            <p>All Rights Reserved.</p>
-        </footer>
     </body>
 </html>
