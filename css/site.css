@@ -21,7 +21,7 @@ footer p{
 h1{
     font-size: 96px;
 }
-h3, h5{
+h3{
     margin: 0;
     font-size: 24px;
     align-self: center;
@@ -32,11 +32,6 @@ header{
     align-items: center;
     justify-content: flex-end;
     width: 90vw;
-}
-hr{
-    width: 100%;
-    border-color: #ffd700;
-    box-shadow: 1px 1px 3px black;
 }
 main{
     display: flex;
@@ -56,17 +51,9 @@ summary:hover{
 .column{
     flex-direction: column;
 }
-.h3Dot{
-    display: flex;
-    font-size: 48px;
-    line-height: 24px;
-}
 .row{
     display: flex;
     flex-direction: row;
-}
-.show{
-    background-color: blue;
 }
 /****** Tag.Class ******/
 h1.gradient{
