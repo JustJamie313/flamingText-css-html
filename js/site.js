@@ -9,7 +9,7 @@ function randomizeFlames(factor){
     }
 }
 function setFlameType(type){
-    document.querySelector('#currentVersion').innerHTML = 'Current Version: '+type;
+    document.querySelector('#currentVersion').innerHTML = `Current Version: <span>${type.toUpperCase()}</span><br>Is Random?: <span id="isRandom" value="${type}">${(type==='css')?'No':'Yes'}</span>`;
     let addTo = document.querySelector('body');
     switch(type){
         case 'css':

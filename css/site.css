@@ -4,11 +4,15 @@ body{
     flex-direction: column;
     align-items: center;
 }
+details{
+    align-self: flex-start;
+    margin-top: 20px;
+}
 h1{
     font-size: 96px;
 }
 h3{
-    margin: 10px 0 0 0;
+    margin: 0;
     font-size: 24px;
 }
 header{
@@ -25,6 +29,12 @@ main{
     width: 90vw;
     flex-direction: column;
     margin-top: 20px;
+}
+summary > *{
+    display: inline;
+}
+summary:hover{
+    cursor: pointer;
 }
 /****** Class ******/
 .row{
@@ -56,6 +66,15 @@ h1.gradient{
     text-shadow: 0 20px 13px rgba(255,169,0,0.375), 0 10px 6.5px rgba(255,0,0,0.375);
 }
 /****** ID Tag ******/
+#currentVersion{
+    font-weight: bolder;
+}
+#currentVersion span{
+    color: green;
+}
+#isRandom[value="css"]{
+    color: red;
+}
 /****** Animations ******/
 @keyframes flames {
     11%{
