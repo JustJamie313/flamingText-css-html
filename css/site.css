@@ -3,6 +3,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: 
+    linear-gradient(rgba(0,0,0,0), rgba(43, 75, 43,1) 66%,rgb(71, 133, 71)),
+    radial-gradient(circle at 86% 13%, rgba(255, 255, 0,0.25), rgba(255, 165, 0,0.5) 5%,rgba(255, 0, 0,0.2) 25%,rgba(230, 230, 250,0.5)50%,rgb(135, 206, 235) 70%);
+    background-size: 100vw 100vh;
+    background-blend-mode: multiply;
+    /* background: black; */
 }
 details{
     align-self: flex-start;
@@ -21,6 +27,7 @@ header{
     align-items: center;
     justify-content: flex-end;
     width: 90vw;
+    overflow-clip-margin: 100px;
 }
 main{
     display: flex;
@@ -45,17 +52,19 @@ summary:hover{
 h1.gradient{
     display: inline;
     margin: 0;
+    
     background-image: 
         linear-gradient(rgba(255,0,0,0.15),rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at center, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 60%);
     background-size: 33% 100%;
+    background-blend-mode: luminosity, darken;
     background-repeat: repeat-x;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    /* -moz-text-fill-color: transparent; */
     -ms-background-clip: text;
-    -ms-text-fill-color: transparent;
+    /* -ms-text-fill-color: transparent; */
     background-clip: text;
     color: transparent;
     animation-name: flames;
@@ -64,6 +73,7 @@ h1.gradient{
     animation-duration: 1313ms;
     animation-fill-mode: both;
     text-shadow: 0 20px 13px rgba(255,169,0,0.375), 0 10px 6.5px rgba(255,0,0,0.375);
+    overflow-inline: visible;
 }
 /****** ID Tag ******/
 #currentVersion{
@@ -78,63 +88,63 @@ h1.gradient{
 /****** Animations ******/
 @keyframes flames {
     11%{
-        background-position: 0.25vw 0.6vh;
+        background-position: 0.25vw -0.6vh;
         background-image: 
         linear-gradient(rgba(0,0,0,1) 35%, rgba(255,169,0,0.15) 41%,rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at bottom, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 40%);
         text-shadow: 0 8px 13px rgba(255,169,0,0.4), 0 4px 6.5px rgba(255,0,0,0.375);
     }
     22%{
-        background-position: 0 0.7vh;
+        background-position: 0 -0.7vh;
         background-image: 
         linear-gradient(rgba(0,0,0,1) 41%, rgba(128,0,0,0.15) 53%,rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at center, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 50%);
         text-shadow: 0 10px 13px rgba(255,169,0,0.4), 0 5px 6.5px rgba(255,0,0,0.375);
     }
     33%{
-        background-position:-0.25vw 0.65vh;
+        background-position:-0.25vw -0.65vh;
         background-image: 
         linear-gradient(rgba(0,0,0,1) 35%, rgba(255,169,0,0.15) 47%,rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at bottom, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 45%);
         text-shadow: 0 9px 13px rgba(255,169,0,0.45), 0 4.5px 6.5px rgba(255,0,0,0.375);
     }
     44%{
-        background-position: 0 0.75vh;
+        background-position: 0 -0.75vh;
         background-image: 
         linear-gradient(rgba(0,0,0,1) 41%, rgba(128,0,0,0.15) 59%,rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at top, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 55%);
         text-shadow: 0 11px 13px rgba(255,169,0,0.55), 0 5.5px 6.5px rgba(255,0,0,0.375);
     }
     55%{
-        background-position: -0.15vw 0.6vh;
+        background-position: -0.15vw -0.6vh;
         background-image: 
         linear-gradient(rgba(0,0,0,1) 35%, rgba(255,169,0,0.15) 41%,rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at bottom, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 40%);
         text-shadow: 0 8px 13px rgba(255,169,0,0.4), 0 4px 6.5px rgba(255,0,0,0.375);
     }
     66%{
-        background-position: 0 0.65vh;
+        background-position: 0 -0.65vh;
         background-image: 
         linear-gradient(rgba(0,0,0,1) 41%, rgba(128,0,0,0.15) 47%,rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at center, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 45%);
         text-shadow: 0 9px 13px rgba(255,169,0,0.45), 0 4.5px 6.5px rgba(255,0,0,0.375);
     }
     77%{
-        background-position: 0.15vw 0.6vh;
+        background-position: 0.15vw -0.6vh;
         background-image: 
         linear-gradient(rgba(0,0,0,1) 35%, rgba(255,169,0,0.15) 41%,rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at bottom, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 40%);
         text-shadow: 0 8px 13px rgba(255,169,0,0.4), 0 4px 6.5px rgba(255,0,0,0.375);
     }
     88%{
-        background-position: 0 0.675vh;
+        background-position: 0 -0.675vh;
         background-image: 
         linear-gradient(rgba(0,0,0,1) 41%, rgba(128,0,0,0.15) 50%,rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at top, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 47.5%);
         text-shadow: 0 9.5px 13px rgba(255,169,0,0.475), 0 4.75px 6.5px rgba(255,0,0,0.375);
     }
     100%{
-        background-position: 0.25 0.7vh;
+        background-position: 0.25 -0.7vh;
         background-image: 
         linear-gradient(rgba(0,0,0,1) 35%, rgba(255,169,0,0.15) 53%,rgba(255, 165, 0,0.75) 65%, rgba(255, 255, 0,0.75) 70%, rgba(255,0,0,0.75) 80%),
         radial-gradient(ellipse at center, rgba(0,0,0,1),rgba(255, 165, 0,1), rgba(255, 255, 0,1), rgba(255, 0, 0,1),rgba(0,0,0,0.75) 50%);
